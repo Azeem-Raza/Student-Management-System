@@ -44,7 +44,7 @@ public class SecurityConfig {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         CorsConfiguration configuration = new CorsConfiguration();
         configuration.setAllowCredentials(true);
-        configuration.addAllowedOrigin("http://localhost:3000"); 
+        configuration.addAllowedOrigin("http://localhost:3000/login"); 
         configuration.addAllowedMethod("*");
         configuration.addAllowedHeader("*");
         source.registerCorsConfiguration("/**", configuration);

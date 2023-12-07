@@ -6,7 +6,7 @@ public interface dataService {
 	List<data> getAllData();
     data getOneData(int students_id);
     void addNewData(data Data);
-   // void updateStudent(Long id, Student student);
+   // void updateData(int students_id, data Data);
     void deleteData(int students_id);
 	
 

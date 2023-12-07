@@ -25,7 +25,14 @@ public class dataServiceImp implements dataService {
     public void addNewData(data Data) {
         dataRepo.save(Data);
     }
-
+   /* @Override
+    public void updateData(int students_id, data Data) {
+        if (dataRepository.existsById(students_id)) {
+            Data.setStudents_ID(students_id);
+            dataRepository.save(Data);
+        }
+    }*/
+    
    
 
     @Override
@@ -33,7 +40,7 @@ public class dataServiceImp implements dataService {
         dataRepo.deleteById(students_id);
     }
 
-	
+ 
 
 
 }

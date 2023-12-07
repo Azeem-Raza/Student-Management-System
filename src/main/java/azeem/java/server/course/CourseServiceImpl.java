@@ -29,13 +29,13 @@ public class CourseServiceImpl implements CourseService {
         courseRepository.save(Course);
     }
 
-    /* @Override
+    @Override
     public void updateCourse(int course_id, course Course) {
         if (courseRepository.existsById(course_id)) {
-            course.setCourse_id(course_id);
+            Course.setCourse_id(course_id);
             courseRepository.save(Course);
         }
-    }*/
+    }
     
 
     @Override
@@ -44,18 +44,9 @@ public class CourseServiceImpl implements CourseService {
     }
 
 
-	@Override
-	public void updateCourse(int course_id, course Course) {
-		// TODO Auto-generated method stub
-		
-	}
+	
 
 
 	
-	/*@Override
-	public List<data> getStudentsEnrolledInCourse(Long courseId) {
-		// TODO Auto-generated method stub
-		return null;
-	}*/
 
 }
