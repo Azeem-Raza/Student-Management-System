@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class MainController {
 	@RequestMapping("/")
 	public @ResponseBody GreetingJson greeting() {
-		 return new GreetingJson("Student Management System");
+		 return new GreetingJson("Welcome To SMS");
 	}
 	
 	public static class GreetingJson {
